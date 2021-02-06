@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    border: 4px double red;
+    color: red;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.sumario{
+    font-size: 1.6rem;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.aviso{
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+
+.aviso a{
+    color: yellow;
+    font-weight: 900;
+}
+video.vid{
+    width: 100%;
+}
+
+.video_heading{
+    color: green;
+    margin: 5% 0 0 0;
+}
+
+.responsive {
+    width: 90%;
+    height: auto;
+}
+
+.audiolink{
+    float: right;
+}

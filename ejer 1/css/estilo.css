@@ -1,0 +1,76 @@
+/* -------------------------------------------------------------------- */
+/*                  FORMATO DE LA CABECERA DE NIVEL H1                  */
+/* //////////////////////////////////////////////////////////////////// */
+
+
+
+header{
+    text-align: center;
+    border: 2px solid red;
+    margin-bottom: 2%;
+}
+
+/* Ajustando tamaño de texto, como paso previo a la animación: 40px */
+
+h1{
+    margin: 1% 0;
+    color: red;
+    font-size: 40px;
+    transition-property: font-size, color;
+    transition-duration: 5s, 3s;
+    transition-property: color 3s;
+}
+
+h1:hover{
+    font-size: 50px;
+    color: green;
+}
+
+/* -------------------------------------------------------------------- */
+/*                  EFECTO DE ANIMACIÓN DE LA CABECERA                  */
+/* //////////////////////////////////////////////////////////////////// */
+
+
+
+/* -------------------------------------------------------------------- */
+/* CREACIÓN DE LA ESTRUCTURA DE GALERÍA HACIENDO USO DE CSS GRID LAYOUT */
+/* //////////////////////////////////////////////////////////////////// */
+
+/* Formateo de filas y columnas */
+
+.contenedor {
+    max-width: 1400px;
+}
+
+/* Definir las filas y columnas de la galería de imágenes */ 
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* Establecer los márgenes verticales y horizontales a 5px*/
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/* Se establece altura de los contenedores de imágenes */
+
+.thumb{
+    max-height: 280px;
+}
+
+/* esta clase sirve para convertor las imagenes <img> en responsivas */
+.responsive {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+  }
